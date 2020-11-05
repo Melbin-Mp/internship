@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        h1{
+            text-align:center;
+            background:darkred;
+        }
+        body{
+            background-color:purple;
+            text-align:center;
+        }
+        p{
+            text-align:center;
+            text-emphasis: style;
+        } 
+    input{
+        padding:10px;
+    }
+#re1{
+    color:aqua;
+}
+#re2{
+    color:darkblue;
+}
+#id1{
+    color:black);
+    background-color: white;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Survey Form</h1>
+        </header>
+        <div id="id1">
+        <p>
+            Let Us Know How We Can Improve FreecodeCamp
+        </p>
+        <form method="POST">
+        <label>
+            Name
+        </label>
+        <input type="Name" placeholder="Enter your Name">
+        <br><br>
+        <label>
+            Email-Id
+        </label>
+        <input type="Email" placeholder="Enter Email-id">
+        <br><br>
+        <label>
+            Age
+        </label>
+        <input type="number" placeholder="age">
+        <br><br>
+        <label>Which Option Best Describe Your Current Role? </label>
+        <select name="Position" id="select1">
+            <option value="Student">Student</option>
+            <option value="Employee">Employee</option>
+            <option value="UnEmployee">UnEmployee</option>
+        </select>
+        <br>
+        <p>How Likely Is That You Would Recommend Free Cloud </p>
+        <input type="radio" name="Recommend" value="Definitly">Definitly<br>
+        <input type="radio" name="Recommend" value="Definitly">Maybe<br>
+        <input type="radio" name="Recommend" value="Definitly">Not Sure
+        <br><br>
+       <label>What Do You Like Most In FreecodeCamp </label>
+       <select name="freecode" id="select2">
+           <option value="">Select a Option</option>
+           <option value="Op2">Student</option>
+           <option value="Op3">Job</option>
+           <option value="Op4">No Job</option>
+       </select>
+       <br>
+       <p>Things That Should Be Improved In The Future  (Check All The Apply)</p>
+       <input type="checkbox" value="Fr">Front End Project<br>
+       <input type="checkbox" value="Ba ">Back End Project<br>
+       <input type="checkbox" value="vishual">Data Visualization<br>
+       <br><br>
+       <div>
+           <input type="button" value="Register" id="re1">
+           <input type="reset" value="Reset" id="re2">
+           </div>
+       </div>
+        </form>
+</body>
+</html>
